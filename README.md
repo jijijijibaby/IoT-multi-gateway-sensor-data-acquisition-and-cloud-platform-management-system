@@ -7,24 +7,23 @@ The effect is as follows：
 
 machine_app
 
-![1](E:\android_project\IoT-multi-gateway-sensor-data-acquisition-and-cloud-platform-management-system\picture\1.png)
+![1](https://github.com/jijijijibaby/IoT-multi-gateway-sensor-data-acquisition-and-cloud-platform-management-system/blob/master/picture/1.png)
 
-![3](E:\android_project\IoT-multi-gateway-sensor-data-acquisition-and-cloud-platform-management-system\picture\3.png)
+![3](https://github.com/jijijijibaby/IoT-multi-gateway-sensor-data-acquisition-and-cloud-platform-management-system/blob/master/picture/3.png)
 
 PC
 
-![2](E:\android_project\IoT-multi-gateway-sensor-data-acquisition-and-cloud-platform-management-system\picture\2.png)
+![2](https://github.com/jijijijibaby/IoT-multi-gateway-sensor-data-acquisition-and-cloud-platform-management-system/blob/master/picture/2.png)
 
 mobile_app
 
-![4](E:\android_project\IoT-multi-gateway-sensor-data-acquisition-and-cloud-platform-management-system\picture\4.png)
+![4](https://github.com/jijijijibaby/IoT-multi-gateway-sensor-data-acquisition-and-cloud-platform-management-system/blob/master/picture/4.png)
+![5](https://github.com/jijijijibaby/IoT-multi-gateway-sensor-data-acquisition-and-cloud-platform-management-system/blob/master/picture/5.png)
 
-![5](E:\android_project\IoT-multi-gateway-sensor-data-acquisition-and-cloud-platform-management-system\picture\5.png)
+![6](https://github.com/jijijijibaby/IoT-multi-gateway-sensor-data-acquisition-and-cloud-platform-management-system/blob/master/picture/6.png)
 
-![6](E:\android_project\IoT-multi-gateway-sensor-data-acquisition-and-cloud-platform-management-system\picture\6.png)
+![7](https://github.com/jijijijibaby/IoT-multi-gateway-sensor-data-acquisition-and-cloud-platform-management-system/blob/master/picture/7.png)
 
-![7](E:\android_project\IoT-multi-gateway-sensor-data-acquisition-and-cloud-platform-management-system\picture\7.png)
+![8](https://github.com/jijijijibaby/IoT-multi-gateway-sensor-data-acquisition-and-cloud-platform-management-system/blob/master/picture/8.png)
 
-![8](E:\android_project\IoT-multi-gateway-sensor-data-acquisition-and-cloud-platform-management-system\picture\8.png)
-
-![9](E:\android_project\IoT-multi-gateway-sensor-data-acquisition-and-cloud-platform-management-system\picture\9.png)
+![9](https://github.com/jijijijibaby/IoT-multi-gateway-sensor-data-acquisition-and-cloud-platform-management-system/blob/master/picture/9.png)
