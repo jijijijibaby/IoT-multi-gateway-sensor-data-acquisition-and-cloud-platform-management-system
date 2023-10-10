@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_yibiaopan"
+        android:icon="@drawable/yibiaopan"
+        android:title="仪表盘"/>
+
+    <item
+        android:id="@+id/bottom_view"
+        android:icon="@drawable/view"
+        android:title="折线图"/>
+
+    <item
+        android:id="@+id/bottom_setup"
+        android:icon="@drawable/setup"
+        android:title="数据日志"/>
+
+    <item
+        android:id="@+id/bottom_root"
+        android:icon="@drawable/root"
+        android:title="用户管理"/>
+</menu>

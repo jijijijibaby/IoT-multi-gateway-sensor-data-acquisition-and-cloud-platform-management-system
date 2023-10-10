@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="debug"
+        android:id="@+id/debug"
+        android:textSize="25sp"
+        android:layout_below="@id/status"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="40dp"
+        android:layout_gravity="bottom"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="translate"
+        android:id="@+id/translate"
+        android:layout_below="@id/debug"
+        android:textSize="25sp"
+        android:layout_marginLeft="0dp"
+        android:layout_gravity="bottom"
+        />
+    <!-- ZigBee网关           -->
+    <ImageView
+        android:id="@+id/zigbee_theme"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginStart="100dp"
+        android:src="@drawable/zigbee" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zigbee"
+        android:textSize="30sp"
+        android:layout_toRightOf="@+id/zigbee_theme"
+        android:textColor="@color/colorAccent"
+        />
+
+    <ImageView
+           android:id="@+id/img_chao"
+           android:layout_marginLeft="100dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/zigbee_theme"
+           android:layout_marginTop="50dp"
+           android:src="@drawable/chaoshengbo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_below="@id/zigbee_theme"
+                    android:layout_toRightOf="@+id/img_chao"
+                    android:textColor="@color/colorAccent"
+                    android:text="超声波"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/chaoshengbo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_chao"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="10dp"
+                    android:text="0"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp" />
+    <ImageView
+        android:id="@+id/img_qiya"
+        android:layout_marginLeft="100dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chaoshengbo"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/qiya"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/chaoshengbo"
+        android:layout_toRightOf="@+id/img_qiya"
+        android:textColor="@color/colorAccent"
+        android:text="气压"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/yali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_qiya"
+        android:layout_marginLeft="150dp"
+        android:text="0"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp" />
+
+        <!-- Lora网关           -->
+    <ImageView
+        android:id="@+id/Lora_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lora"
+        android:layout_toRightOf="@+id/zigbee_theme"
+        android:layout_marginLeft="250dp"
+        android:layout_marginStart="250dp"
+        android:layout_toEndOf="@+id/zigbee_theme" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lora"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp"
+        android:layout_toRightOf="@+id/Lora_theme"
+        />
+        <ImageView
+            android:id="@+id/img_keran"
+            android:layout_marginLeft="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_chao"
+            android:layout_below="@id/Lora_theme"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ranqi"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/Lora_theme"
+        android:layout_toRightOf="@id/img_keran"
+        android:textColor="@color/colorAccent"
+        android:text="可燃气体"
+        android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/keranqiti"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_keran"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/chaoshengbo"
+                    android:text="0"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="300dp"
+                    android:textSize="30sp" />
+    <ImageView
+        android:id="@+id/img_co"
+        android:layout_marginLeft="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_qiya"
+        android:layout_below="@id/keranqiti"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/co"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/keranqiti"
+        android:layout_toRightOf="@id/img_co"
+        android:textColor="@color/colorAccent"
+        android:text="一氧化碳"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/co"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_co"
+        android:layout_toRightOf="@+id/yali"
+        android:text="0"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="300dp"
+        android:textSize="30sp" />
+
+            <!-- WIFI网关          -->
+    <ImageView
+        android:id="@+id/wifi_theme"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/Lora_theme"
+        android:layout_marginStart="250dp"
+        android:src="@drawable/wifi"
+        android:layout_marginLeft="250dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WIFI"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"
+        android:layout_toRightOf="@+id/wifi_theme"
+        />
+    <ImageView
+        android:id="@+id/img_guangzhao"
+        android:layout_marginLeft="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_keran"
+        android:layout_below="@id/wifi_theme"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/guangzhao"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/wifi_theme"
+        android:layout_toRightOf="@id/img_guangzhao"
+        android:textColor="@color/colorAccent"
+        android:text="光照"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/guangzhao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_guangzhao"
+        android:layout_toRightOf="@+id/keranqiti"
+        android:text="0"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="260dp"
+        android:textSize="30sp" />
+    <ImageView
+        android:id="@+id/img_zhendong"
+        android:layout_marginLeft="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_co"
+        android:layout_below="@id/guangzhao"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/zhendong"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/guangzhao"
+        android:layout_toRightOf="@id/img_zhendong"
+        android:textColor="@color/colorAccent"
+        android:text="震动"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/zhendong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_zhendong"
+        android:layout_toRightOf="@+id/co"
+        android:text="无"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="260dp"
+        android:textSize="30sp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/zhendong"
+        android:id="@+id/img_gps1"
+        android:src="@drawable/gps"
+        android:layout_marginLeft="320sp"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/status"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/zhendong"
+        android:layout_toRightOf="@+id/img_gps1"
+        android:textColor="@color/colorAccent"
+        android:text="X轴"
+        android:textSize="40sp" />
+    <TextView
+        android:id="@+id/xmove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_gps1"
+        android:layout_toRightOf="@+id/co"
+        android:text="0"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="260dp"
+        android:textSize="30sp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/xmove"
+        android:id="@+id/img_gps2"
+        android:src="@drawable/gps"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="320sp"
+        android:layout_toRightOf="@+id/status"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/xmove"
+        android:layout_toRightOf="@+id/img_gps2"
+        android:textColor="@color/colorAccent"
+        android:text="Y轴"
+        android:textSize="40sp" />
+    <TextView
+        android:id="@+id/ymove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_gps2"
+        android:layout_toRightOf="@+id/co"
+        android:text="0"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="260dp"
+        android:textSize="30sp" />
+<!--蓝牙网关-->
+    <ImageView
+        android:id="@+id/bluebooth_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bluebooth"
+        android:layout_marginLeft="250dp"
+        android:layout_marginStart="250dp"
+        android:layout_toRightOf="@+id/wifi_theme"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bluetooth"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"
+        android:layout_toRightOf="@+id/bluebooth_theme"
+        />
+    <ImageView
+        android:id="@+id/img_wendu"
+        android:layout_marginLeft="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_guangzhao"
+        android:layout_below="@id/bluebooth_theme"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/wendu"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/bluebooth_theme"
+        android:layout_toRightOf="@id/img_wendu"
+        android:textColor="@color/colorAccent"
+        android:text="温度"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/wendu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_wendu"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/guangzhao"
+        android:text="0"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/img_shidu"
+        android:layout_marginLeft="250dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img_zhendong"
+        android:layout_below="@id/guangzhao"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/shidu"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/wendu"
+        android:layout_toRightOf="@id/img_shidu"
+        android:textColor="@color/colorAccent"
+        android:text="湿度"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/shidu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_shidu"
+        android:layout_toRightOf="@+id/zhendong"
+        android:text="0"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="280dp"
+        android:textSize="30sp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/shidu"
+        android:id="@+id/img_renti"
+        android:src="@drawable/renti"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="250sp"
+        android:layout_toRightOf="@+id/img_gps1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shidu"
+        android:layout_toRightOf="@+id/img_renti"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/colorAccent"
+        android:text="人体感应"
+        android:textSize="32sp" />
+    <TextView
+        android:id="@+id/rentiganying"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_renti"
+        android:layout_toRightOf="@+id/xmove"
+        android:text="无人"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="280dp"
+        android:textSize="30sp" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rentiganying"
+        android:id="@+id/img_fenbei"
+        android:src="@drawable/fenbei"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="250sp"
+        android:layout_toRightOf="@+id/img_gps2"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rentiganying"
+        android:layout_toRightOf="@+id/img_fenbei"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="50dp"
+        android:text="声音"
+        android:textSize="40sp" />
+    <TextView
+        android:id="@+id/voice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_fenbei"
+        android:layout_toRightOf="@+id/ymove"
+        android:text="无"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginLeft="280dp"
+        android:textSize="30sp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yali"
+        android:id="@+id/status"
+        android:textColor="@color/colorAccent"
+        android:layout_marginLeft="100sp"
+        android:text="未连接到服务器"
+        android:textSize="40sp"
+        />
+</RelativeLayout>
